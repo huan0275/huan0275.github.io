@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en-US"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Reggie's Coffee Shop - HOME</title>
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+
+    <body>
+        <!--This is an html comment-->
+        <!-- 
+            shift will indent - shift + tab will indent backwards. 
+            cmd + left/right arrows move to start and end of the line. 
+            cmd + up/down arrows move to start or end of the page. 
+            shift + cmd + left/right/up/down arrows select to the start/end of a line 
+            shift + up/down arrows select per line
+         -->
+        <!-- Site header -->
+        <header>
+            <!-- h1 is the most important heading. We can use six levels of headings from h1 to h6 -->
+            <h1> Reggie's Coffee Shop</h1>     
+            
+            <!-- use nav tag and list tag to list the navigation, but content is an anchor link -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <!-- starting the main content of the page -->
+        <main>
+            <!-- adding an on page link  -->
+            <a href="#treatofweek">Treat of the Week</a>
+            <!-- article of the page. this can be used a stand-alone -->
+            <article>
+                <h2>Our Story</h2>
+                <!-- adding an image -->
+                <!-- ./ makes possible to see the pic on github, without it the pic may only show on local page. -->
+                <img src="./images/coffee-shop.jpg" title="coffee cup on a pile of coffee beans" alt="coffee cup on a pile of cofee beans.">
+                
+                <p>
+                    We are a <em> family owned business </em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr>  and the head of barista of the shop. Maria is the pastry chef.
+                </p>
+                <blockquote>
+                    We love all things coffee! <cite>- Reggie and Maria</cite>
+                </blockquote>
+                <hr>
+                <section>
+                    <h3>Ottawa</h3>
+                    <p>
+                        We are a local coffee shop based in Ottawa. Our specialty is  <b> organic free-trade </b> coffee.
+                    </p>
+                </section>
+            </article>
+            <aside>
+                <h3>Merchandise</h3>
+                <!-- adding an unordered list -->
+                <ul>
+                    <li>T-shirts</li>
+                    <li>Hats</li>
+                    <li>Hoodies</li>
+                </ul>
+            </aside>
+            <!-- adding section for ordered list -->
+            <section>
+                <h3>Events</h3>
+                <ol>
+                    <!-- <li>shortcut for creating many elements is element X amount (e.g.: li*5) </li> -->
+                    <li>June 23<sup>rd</sup> - Coffee for Hope Foundation </li>
+                    <li>July 17<sup>th</sup> - Live Music </sup></li>
+                </ol>
+            </section>
+            <!-- adding a section for description list. -->
+            <section id="treatofweek">
+                <!-- no need hashtag, id means hashtag. -->
+                <h3>Treat of the Week</h3>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>Banana Bread</dd>
+                    <dt>Calories</dt>
+                    <dd>250 Cal</dd>
+                    <dt>Ingredients</dt>
+                    <dd>
+                        <ul>
+                            <li>All purpose flour </li>      
+                            <li>Baking Soda</li>
+                            <li>Baking Powder</li>
+                            <li>Salt</li>
+                            <li>Butter</li>
+                            <li>Sugar</li>
+                            <li>Eggs</li>
+                            <li>Lemon Juice</li>
+                            <li>Banana</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <!-- adding an external link -->
+                <a href="https://www.simplyrecipes.com/recipes/banana_bread/" target="_blank">Get the Recipe</a>
+            </section>
+            <!-- adding section for Menu Table -->
+            <section>
+                <h3>Menu Specials</h3>
+                <table border>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Items</th>
+                            <th rowspan="2">Price</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Banana Bread</td>
+                            <td>250</td>
+                            <td>&dollar;6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Oatcake</td>
+                            <td>400</td>
+                            <td>&dollar;8.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <!-- Site Footer -->
+        <footer>
+            Copyright &copy; Reggie's Coffee Shop, 2023
+        </footer>
+         
+    </body>
+ 
+</html>
+
