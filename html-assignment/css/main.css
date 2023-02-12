@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background-color: rgb(151, 214, 109);
+}
+
+footer{
+    background-color: rgb(151, 214, 109);
+}
+
+.site-title{
+    color:#f9faf1;
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+
+}
+
+aside ol li{
+    list-style-type: square;
+    
+}
+
+aside ol li:nth-child(odd) {
+    background-color: rgb(204, 255, 0);
+}
+
+nav ul li{
+    list-style-type: none;  
+}
+
+
+nav ul a:link{
+    background-color: rgb(227, 233, 230);
+    color:rgb(133, 195, 237);
+    text-decoration: none;
+    border-radius:3px;
+    border-color: #2e3022;
+}
+
+
+nav ul a:visited{
+    background-color: rgb(151, 214, 109);
+    color:rgb(252, 252, 252);
+    border: 100px;
+    border-color: black;
+}
+
+
+nav ul a:hover{
+    background-color:rgb(247, 135, 222);
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+nav ul a:focus{
+    background-color:rgb(245, 111, 216);
+    color: white;
+    font-weight:bolder;
+    font-size:25px;
+}
+
+
+nav ul a:active{
+    background-color: rgb(164, 219, 97);
+    color:rgb(255, 63, 236);
+    font-size: 250px;
+}
+
+table, th, td{
+        border: 1px solid;
+}
