@@ -51,12 +51,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    display: inline-block;
-    width: 49%;
-    padding: 1em;
-    box-sizing: border-box;
-}
+
 /* midterm needs this below and above */
 
 /* selecting child element with multiple levels */

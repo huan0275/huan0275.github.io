@@ -1,45 +1,188 @@
 body{
-    background-color: #DFF2EF;
+    background-color: #AAD4CF;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-nav ul {
+.container{
+    max-width: 900px;  
+    margin:0 auto;
     
-    font-size:35px;
-    display: inline-block ;
+    background-color: #dff2ef;
+}
+
+.head-1{
+    background: url(../images/lone-starfish-wide.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+
+nav ul li {
     list-style: none;
+    
+    display: block;
+    font-size:25px;
+    text-transform: uppercase;
+    margin-top: 0cm;
+    padding:0%;
+
+    width:1150%;
+    box-sizing: 11em;
+    padding:border-box ;
+
+
 }
 
-.home{
-    float: left;
-    margin-right: 28rem;
-}
 
-.story{
-    float:left;
-    margin-right: 28rem;
-}
+#navigation {
+    
+    position: absolute;
+    top:369px;
+    width: 70.55%;
+    margin-right: 0;
+    margin-left:0;
+    margin-bottom: 100%;
 
-.contact{
-    float:left;
+    
+   
+    
    
 }
 
+#navigation li{
+    
+    margin:90px;
+    display:inline;
+    padding-top: 0;
+    position: relative;
+    
+}
+
+ul li:not(:last-child)::after{
+    content:"";
+    border: 1px solid black;  
+    border-width: 1px 1px 0 0 ;
+    position: absolute;
+    right: -90px;
+    top: 0;
+    height: 100%;
+}
+
+.image-1{
+    position: absolute;
+}
+
 h1 {
-    background-image: url(../images/lone-starfish-wide.jpg);
     
     font-size: 3rem;
     font-weight: 400;
     color:white;
     
-    
-    padding-top:210px;
-    padding-left: 0px;
-    padding-bottom: 60px;
+    padding-top:198px;
+    padding-left: 210px;
+    padding-bottom: 80px;
     padding-right: 220px;
     text-align: center;
+    text-transform: capitalize;
+}
+
+.small-image{
+    float: left;
+    width: 210px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+}
+
+p{
+    font-size:15px;
+    margin-left:10px;
+}
+
+h2{
+    text-align: left;
+    font-size: 34px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+   
+}
+
+.types {
+   
+    position: relative;
+    padding-left: 22px;
+}
+
+h3{
+    text-transform: capitalize;
+    font-size:27px;
+    font-weight: 300;
+    margin-left:10px;
+    
+}
+h4{
+    font-weight: 200;
+}
+
+.container-2{
+    border:1px solid black;
+    padding-left: 14px;
+    margin: 0px 13px;
+
+}
+
+ .form{
+    padding-top: 30px;
+   
+ }
+
+.name {
+    padding-top: 11px;
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+.nameform{
+    padding-bottom: 11px;
+    width: 390px;
+}
+.email{
+    padding-top: 11px;
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+.emailform{
+    padding-bottom: 11px;
+}
+.message{
+    padding-top: 11px;
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+
+
+
+.btn{
+    padding:16px 16px;
+    background-color: #dff2ef;
+    text-transform: uppercase;
+    border:1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #AAD4CF;
+    color:white;
 }
 
 .copyright{
-    padding-left: 30px;
+    
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-left:750px;
+    text-transform: capitalize;
 }
