@@ -110,15 +110,18 @@ h2 {
 }
 
 h3 {
-    text-transform: capitalize;
+    
     font-size: 27px;
     font-weight: 300;
     margin-left: 10px;
 
 }
 
+ 
+
 h4 {
     font-weight: 200;
+     
 }
 
 .container-2 {
