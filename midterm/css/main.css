@@ -1,83 +1,78 @@
-body{
+body {
     background-color: #AAD4CF;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 900px;  
-    margin:0 auto;
-    
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+
     background-color: #dff2ef;
-}
-
-.head-1{
-    background: url(../images/lone-starfish-wide.jpg) no-repeat center;
-    background-size: cover;
-    
 }
 
 nav ul li {
     list-style: none;
-    
+
     display: block;
-    font-size:25px;
+    font-size: 25px;
     text-transform: uppercase;
     margin-top: 0cm;
-    padding:0%;
+    padding: 0%;
 
-    width:1150%;
-    box-sizing: 11em;
-    padding:border-box ;
+
+
 
 
 }
 
 
 #navigation {
-    
+
     position: absolute;
-    top:369px;
+    top: 369px;
     width: 70.55%;
     margin-right: 0;
-    margin-left:0;
+    margin-left: 0;
     margin-bottom: 100%;
 
-    
-   
-    
-   
+
+
+
+
 }
 
-#navigation li{
-    
-    margin:90px;
-    display:inline;
+#navigation li {
+
+    margin: 90px;
+    display: inline;
     padding-top: 0;
     position: relative;
-    
+
 }
 
-ul li:not(:last-child)::after{
-    content:"";
-    border: 1px solid black;  
-    border-width: 1px 1px 0 0 ;
+ul li:not(:last-child)::after {
+    content: "";
+    border: 1px solid black;
+    border-width: 1px 1px 0 0;
     position: absolute;
     right: -90px;
     top: 0;
     height: 100%;
 }
 
-.image-1{
+.image-1 {
     position: absolute;
 }
 
 h1 {
-    
+
+    background: url(../images/lone-starfish-wide.jpg) no-repeat center;
+    background-size: cover;
     font-size: 3rem;
     font-weight: 400;
-    color:white;
-    
-    padding-top:198px;
+    color: white;
+
+    padding-top: 198px;
     padding-left: 210px;
     padding-bottom: 80px;
     padding-right: 220px;
@@ -85,7 +80,7 @@ h1 {
     text-transform: capitalize;
 }
 
-.small-image{
+.small-image {
     float: left;
     width: 210px;
     margin-right: 1rem;
@@ -93,68 +88,73 @@ h1 {
     margin-left: 10px;
 }
 
-p{
-    font-size:15px;
-    margin-left:10px;
+p {
+    font-size: 15px;
+    margin-left: 10px;
 }
 
-h2{
+h2 {
     text-align: left;
     font-size: 34px;
     font-weight: 300;
     margin-left: 10px;
     margin-top: 100px;
     margin-bottom: 10px;
-   
+
 }
 
 .types {
-   
+
     position: relative;
     padding-left: 22px;
 }
 
-h3{
+h3 {
     text-transform: capitalize;
-    font-size:27px;
+    font-size: 27px;
     font-weight: 300;
-    margin-left:10px;
-    
+    margin-left: 10px;
+
 }
-h4{
+
+h4 {
     font-weight: 200;
 }
 
-.container-2{
-    border:1px solid black;
+.container-2 {
+    border: 1px solid black;
     padding-left: 14px;
     margin: 0px 13px;
 
 }
 
- .form{
+.form {
     padding-top: 30px;
-   
- }
+
+}
 
 .name {
     padding-top: 11px;
     padding-bottom: 6px;
     text-transform: capitalize;
 }
-.nameform{
+
+.nameform {
     padding-bottom: 11px;
     width: 390px;
 }
-.email{
+
+.email {
     padding-top: 11px;
     padding-bottom: 6px;
     text-transform: capitalize;
 }
-.emailform{
+
+.emailform {
     padding-bottom: 11px;
 }
-.message{
+
+.message {
     padding-top: 11px;
     padding-bottom: 6px;
     text-transform: capitalize;
@@ -162,27 +162,27 @@ h4{
 
 
 
-.btn{
-    padding:16px 16px;
+.btn {
+    padding: 16px 16px;
     background-color: #dff2ef;
     text-transform: uppercase;
-    border:1px solid black;
+    border: 1px solid black;
     margin-top: 20px;
     margin-bottom: 20px;
 
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     font-weight: 600;
     background-color: #AAD4CF;
-    color:white;
+    color: white;
 }
 
-.copyright{
-    
+.copyright {
+
     margin-top: 30px;
     padding-bottom: 30px;
-    margin-left:750px;
+    margin-left: 750px;
     text-transform: capitalize;
 }
