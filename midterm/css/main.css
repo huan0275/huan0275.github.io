@@ -29,8 +29,8 @@ nav ul li {
 #navigation {
 
     position: absolute;
-    top: 369px;
-    width: 70.55%;
+    top: 352px;
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 100%;
@@ -43,22 +43,22 @@ nav ul li {
 
 #navigation li {
 
-    margin: 90px;
+    margin: 50px;
     display: inline;
     padding-top: 0;
     position: relative;
+    border-right: 1px solid black;
+    padding-right:120px;
 
 }
 
-ul li:not(:last-child)::after {
-    content: "";
-    border: 1px solid black;
-    border-width: 1px 1px 0 0;
-    position: absolute;
-    right: -90px;
-    top: 0;
-    height: 100%;
+#navigation li:last-child{
+    border-right:none;
+  
 }
+
+ 
+ 
 
 .image-1 {
     position: absolute;
