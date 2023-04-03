@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Three Star Media</title>
+</head>
+
+<body>
+    <header>
+        <!-- nav inside the header -->
+        <div class="nav">
+            <nav>
+
+
+                <ul>
+                    <!--inside the ul tag, clickable logo that goes to the homepage, below -->
+                    <li>
+                        <a href="index.html"><img src="/final-project/images/logo.png" alt="logo"></a></li>
+
+                    <!-- current highlight what does that mean?-->
+
+
+                    <li>
+                        <a href="index.html" class="current">Home</a>
+                    </li>
+
+                    <!-- jump to the section with hashtag -->
+
+                    <li>
+                        <a href="#aboutus">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    <!-- search bar with form tag and mag glass -->
+                    <li>
+                        <form action="search.html" target="_blank">
+                            <label for="contents">search</label>
+                            <input type="text" id="contents" placeholder="Search">
+                            <!-- submit button, which can't be put inside a tag or the other way around-->
+                            <button onclick="search.html">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #1b1c1d;"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <!-- ul: margin zero auto that applies to the ul when cssing, center -->
+            </nav>
+            <!-- use flex when css -->
+            <!-- nav ends here still inside the header -->
+        </div>
+
+        <div class="banner">
+            <!-- background image when cssing with 100%, no image when htmling-->
+            <h1>Welcome to Three Star Media</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem id ipsa eum error eaque
+                accusantium tempore aperiam. Distinctio optio sint inventore provident odio error voluptas debitis
+                doloremque porro magnam?
+            </p>
+
+            <button onclick="contact.html">
+
+                Connect with us <i class="fa-sharp fa-solid fa-play" style="color: #050505;"></i>
+
+
+            </button>
+        </div>
+        <!-- max width same with nav ul, on the this div; rgba control the opacity -->
+
+    </header>
+
+    <main>
+        <section id="aboutus">
+            <!-- there's a background color when cssing -->
+            <div class="about-info">
+
+                <img src="/final-project/images/about-us.jpg" alt="about us">
+
+                <div>
+                    <h2>About Us</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis quisquam vel sunt
+                        tenetur
+                        doloribus! Architecto ipsum ipsa eius minus magnam voluptate velit tempora delectus dolorum
+                        aperiam.
+                        Officia, aliquam exercitationem. </p>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos illum ratione commodi eius
+                        sapiente
+                        iste beatae laboriosam autem tempora quos laborum omnis optio, voluptatibus deleniti culpa,
+                        debitis
+                        dolorem eum possimus?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <!-- max width 100% when cssing -->
+            <!-- internal divs / 5 cards: max width margin zero auto also-->
+            <div>
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="digital">
+                <img src="/final-project/images/digital.jpg" alt="digital">
+                <h3>
+                    Digital Transformation
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
+                    asperiores quasi voluptas error magni!
+                </p>
+
+                <button onclick="digital.html">Digital Plans <i class="fa-sharp fa-solid fa-play"
+                        style="color: #ffffff;"></i></button>
+            </div>
+
+            <div class="marketing">
+                <img src="/final-project/images/marketing.jpg" alt="marketing">
+
+                <h3>
+                    Marketing
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
+                    asperiores quasi voluptas error magni!
+                </p>
+                <button onclick="marketing.html">Marketing Plans <i class="fa-sharp fa-solid fa-play"
+                        style="color: #ffffff;"></i></button>
+            </div>
+
+            <div class="video">
+
+                <img src="/final-project/images/video.jpg" alt="video">
+
+                <h3>
+                    Video Production
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
+                    asperiores quasi voluptas error magni!
+                </p>
+                <button onclick="videoplan.html">Video Plans <i class="fa-sharp fa-solid fa-play"
+                        style="color: #ffffff;"></i></button>
+            </div>
+
+            <div class="web">
+
+                <img src="/final-project/images/web.jpg" alt="web">
+
+                <h3>
+                    Web Development
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
+                    asperiores quasi voluptas error magni!
+                </p>
+                <button onclick="webplans.html">Web Plans <i class="fa-sharp fa-solid fa-play"
+                        style="color: #ffffff;"></i></button>
+            </div>
+
+            <div class="print">
+
+                <img src="/final-project/images/print.jpg" alt="print">
+
+                <h3>
+                    Print
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
+                    asperiores quasi voluptas error magni!
+                </p>
+                <button onclick="printplans.html">Print Plans <i class="fa-sharp fa-solid fa-play"
+                        style="color: #ffffff;"></i></button>
+            </div>
+        </section>
+
+        <section class="vision">
+            <!-- no image here cuz it seems like it's gonna be done in css -->
+            <div>
+                <h2>Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa porro harum quia vel qui tenetur animi
+                    dolor labore odit ad, molestias maiores, sint incidunt. Harum eveniet corrupti officiis sapiente id!
+                </p>
+                <button>Learn More <i class="fa-sharp fa-solid fa-play" style="color: #ffffff;"></i></button>
+            </div>
+            <!-- still margin zero auto 100% -->
+        </section>
+
+        <section id="team">
+            <div>
+                <h2>Our Team</h2>
+            </div>
+            <!-- use flex on this
+            50% ea. -->
+
+            <!-- image no need to be in the div, but info needs-->
+            <img src="/final-project/images/john.jpg" alt="john">
+
+            <div class="jd">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ab reprehenderit facilis adipisci
+                    officia eligendi aut quasi minus, commodi illum quae accusantium recusandae fuga cumque eius eos
+                    repudiandae velit rerum!</p>
+            </div>
+
+            <div class="br">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ab reprehenderit facilis adipisci
+                    officia eligendi aut quasi minus, commodi illum quae accusantium recusandae fuga cumque eius eos
+                    repudiandae velit rerum!</p>
+            </div>
+
+            <img src="/final-project/images/bob.jpg" alt="john">
+
+        </section>
+
+        <section id="contact">
+            <div>
+                <!-- with the width 100% -css max width and margin zero auto -->
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="sendusmsg">
+
+
+                <h3>
+                    Send us a message
+                </h3>
+
+                <form action="123">
+
+                    <div> <label for="fullname">Full Name</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                </form>
+
+                <button>
+                    Send
+                </button>
+
+            </div>
+
+            <div class="map">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7700198109583!2d-75.75982286646911!3d45.34909572275814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029714585!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="table">
+                <table>
+                    <caption>
+                        Hours of Operation
+                    </caption>
+                    <!-- table head is like the first row with names or what not -->
+                    <thead>
+                        <tr>
+                            <th>
+                                Days
+                            </th>
+                            <th>
+                                Hours
+                            </th>
+                        </tr>
+                    </thead>
+                    <!-- tbody is like the real contents -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                Monday - Friday
+                            </td>
+                            <td>
+                                9 AM - 6 PM
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Saturday - Sunday
+                            </td>
+                            <td>
+                                Closed
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- main ends right before the footer -->
+
+    <!-- footer in body starts below -->
+    <footer class="footer">
+        &copy; Copyright Three Star Media, 2020
+        All images are taken from <a href="google.com">Unsplash</a>
+    </footer>
+    <!-- footer ends here still in the body -->
+</body>
+<!-- body ends here -->
+
+</html>
