@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Three Star Media</title>
 </head>
@@ -12,15 +18,16 @@
 <body>
     <header>
         <!-- nav inside the header -->
-        <div class="nav">
+        <div class="nav-container wrapper">
+
             <nav>
 
 
                 <ul>
                     <!--inside the ul tag, clickable logo that goes to the homepage, below -->
-                    <li>
-                        <a href="index.html"><img src="/final-project/images/logo.png" alt="logo"></a></li>
 
+                    <li class="image1"> <a href="index.html"><img src="/final-project/images/logo.png" alt="logo"></a>
+                    </li>
                     <!-- current highlight what does that mean?-->
 
 
@@ -30,32 +37,32 @@
 
                     <!-- jump to the section with hashtag -->
 
-                    <li>
+                    <li class="about">
                         <a href="#aboutus">About Us</a>
                     </li>
 
-                    <li>
+                    <li class="services">
                         <a href="#services">Services</a>
                     </li>
 
 
-                    <li>
+                    <li class="team">
                         <a href="#team">Team</a>
                     </li>
 
 
-                    <li>
+                    <li class="contact">
                         <a href="#contact">Contact</a>
                     </li>
 
                     <!-- search bar with form tag and mag glass -->
-                    <li>
+                    <li class="searchbar">
                         <form action="search.html" target="_blank">
                             <label for="contents">search</label>
-                            <input type="text" id="contents" placeholder="Search">
+                            <input type="text" id="contents" placeholder="Search" class="input">
                             <!-- submit button, which can't be put inside a tag or the other way around-->
-                            <button onclick="search.html">
-                                <i class="fa-solid fa-magnifying-glass" style="color: #1b1c1d;"></i>
+                            <button class="btn1" onclick="search.html">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </form>
                     </li>
@@ -66,87 +73,106 @@
             <!-- nav ends here still inside the header -->
         </div>
 
-        <div class="banner">
-            <!-- background image when cssing with 100%, no image when htmling-->
-            <h1>Welcome to Three Star Media</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem id ipsa eum error eaque
-                accusantium tempore aperiam. Distinctio optio sint inventore provident odio error voluptas debitis
-                doloremque porro magnam?
-            </p>
+        <!-- CSS: flex box for the first div in the header -->
 
-            <button onclick="contact.html">
+        <div class="banner wrapper">
+            <!-- CSS: background image when cssing with 100%, no image when htmling-->
+            <!-- span width 100% max width 1200 px  -->
 
-                Connect with us <i class="fa-sharp fa-solid fa-play" style="color: #050505;"></i>
+            <div class="banner-2">
+                <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem id ipsa eum error
+                    eaque
+                    accusantium tempore aperiam. Distinctio optio sint inventore provident odio error voluptas debitis
+                    doloremque porro magnam?
+                </p>
+
+                <a href="contact.html">
+                    <button>
+
+                        Connect with us <i class="fa-sharp fa-solid fa-play"></i>
 
 
-            </button>
+                    </button>
+                </a>
+
+            </div>
         </div>
         <!-- max width same with nav ul, on the this div; rgba control the opacity -->
 
     </header>
 
     <main>
-        <section id="aboutus">
-            <!-- there's a background color when cssing -->
+        <section id="aboutus" class="wrapper">
+            <!-- there's a background color when cssing with width 100%-->
             <div class="about-info">
 
                 <img src="/final-project/images/about-us.jpg" alt="about us">
-
-                <div>
-                    <h2>About Us</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis quisquam vel sunt
-                        tenetur
-                        doloribus! Architecto ipsum ipsa eius minus magnam voluptate velit tempora delectus dolorum
-                        aperiam.
-                        Officia, aliquam exercitationem. </p>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos illum ratione commodi eius
-                        sapiente
-                        iste beatae laboriosam autem tempora quos laborum omnis optio, voluptatibus deleniti culpa,
-                        debitis
-                        dolorem eum possimus?</p>
-                </div>
             </div>
+
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis quisquam vel sunt
+                    tenetur
+                    doloribus! Architecto ipsum ipsa eius minus magnam voluptate velit tempora delectus dolorum
+                    aperiam.
+                    Officia, aliquam exercitationem. </p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos illum ratione commodi eius
+                    sapiente
+                    iste beatae laboriosam autem tempora quos laborum omnis optio, voluptatibus deleniti culpa,
+                    debitis
+                    dolorem eum possimus?</p>
+            </div>
+
+            <!-- mobile / global setting css -->
+            <!-- flex or grid: grid-template-columns 2 1fr 1fr -->
         </section>
 
-        <section id="services">
-            <!-- max width 100% when cssing -->
-            <!-- internal divs / 5 cards: max width margin zero auto also-->
-            <div>
-                <h2>Our Services</h2>
-            </div>
+        <section id="services" class="serv wrapper">
+            <!-- regular width 100% container that contains five cards, when cssing -->
+            <!-- internal divs / 5 cards: max width 1200 px, margin zero auto -->
 
-            <div class="digital">
+            <!-- 3 rows 6 columns or repeat 3 auto-->
+            <!-- grid-area -->
+            <!-- a a a a a a 
+                     b b ... -->
+
+
+            <h2 class="h2">Our Services</h2>
+
+
+            <div class="card digital">
                 <img src="/final-project/images/digital.jpg" alt="digital">
                 <h3>
                     Digital Transformation
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae
+                    distinctio
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
 
-                <button onclick="digital.html">Digital Plans <i class="fa-sharp fa-solid fa-play"
-                        style="color: #ffffff;"></i></button>
+                <button>Digital Plans <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
 
-            <div class="marketing">
+            <div class="card marketing">
                 <img src="/final-project/images/marketing.jpg" alt="marketing">
 
                 <h3>
                     Marketing
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae
+                    distinctio
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button onclick="marketing.html">Marketing Plans <i class="fa-sharp fa-solid fa-play"
-                        style="color: #ffffff;"></i></button>
+                <button>Marketing Plans <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
 
-            <div class="video">
+            <div class="card video">
 
                 <img src="/final-project/images/video.jpg" alt="video">
 
@@ -154,15 +180,15 @@
                     Video Production
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae
+                    distinctio
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button onclick="videoplan.html">Video Plans <i class="fa-sharp fa-solid fa-play"
-                        style="color: #ffffff;"></i></button>
+                <button>Video Plans <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
 
-            <div class="web">
+            <div class="card web">
 
                 <img src="/final-project/images/web.jpg" alt="web">
 
@@ -170,15 +196,15 @@
                     Web Development
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae
+                    distinctio
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button onclick="webplans.html">Web Plans <i class="fa-sharp fa-solid fa-play"
-                        style="color: #ffffff;"></i></button>
+                <button>Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
 
-            <div class="print">
+            <div class="card print">
 
                 <img src="/final-project/images/print.jpg" alt="print">
 
@@ -186,36 +212,40 @@
                     Print
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae distinctio
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit odit, eius recusandae
+                    distinctio
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button onclick="printplans.html">Print Plans <i class="fa-sharp fa-solid fa-play"
-                        style="color: #ffffff;"></i></button>
+                <button>Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
+
         </section>
 
-        <section class="vision">
-            <!-- no image here cuz it seems like it's gonna be done in css -->
+        <section class="vision wrapper">
+            <!-- no image here cuz it seems like it's gonna be done in css background image: width 100% margin zero auto 1200px -->
             <div>
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa porro harum quia vel qui tenetur animi
                     dolor labore odit ad, molestias maiores, sint incidunt. Harum eveniet corrupti officiis sapiente id!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <button>Learn More <i class="fa-sharp fa-solid fa-play" style="color: #ffffff;"></i></button>
+                <button>Learn More <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
             <!-- still margin zero auto 100% -->
         </section>
 
-        <section id="team">
-            <div>
-                <h2>Our Team</h2>
-            </div>
+        <section id="team" class="wrapper ourtm">
+
+            <h2>Our Team</h2>
+
             <!-- use flex on this
             50% ea. -->
+            <!-- outer max  -->
+            <!-- internal max w 1200 -->
 
             <!-- image no need to be in the div, but info needs-->
-            <img src="/final-project/images/john.jpg" alt="john">
+            <img src="/final-project/images/john.jpg" alt="john" class="jdp">
 
             <div class="jd">
                 <h3>John Doe</h3>
@@ -225,23 +255,24 @@
                     repudiandae velit rerum!</p>
             </div>
 
+            <img src="/final-project/images/bob.jpg" alt="john" class="brp">
+
             <div class="br">
+
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ab reprehenderit facilis adipisci
                     officia eligendi aut quasi minus, commodi illum quae accusantium recusandae fuga cumque eius eos
                     repudiandae velit rerum!</p>
             </div>
-
-            <img src="/final-project/images/bob.jpg" alt="john">
-
+            <!-- flex base 50%, order of 1 -->
         </section>
 
-        <section id="contact">
-            <div>
-                <!-- with the width 100% -css max width and margin zero auto -->
-                <h2>Contact Us</h2>
-            </div>
+        <section id="contact" class="wrapper ctus">
+
+            <!-- with the width 100% -css max width and margin zero auto -->
+            <h2>Contact Us</h2>
+
 
             <div class="sendusmsg">
 
@@ -284,15 +315,7 @@
 
             </div>
 
-            <div class="map">
-                <h3>Location</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7700198109583!2d-75.75982286646911!3d45.34909572275814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029714585!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
+            <!-- flex order of 1 for table class with 100% base -->
             <div class="table">
                 <table>
                     <caption>
@@ -330,12 +353,21 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="map">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7700198109583!2d-75.75982286646911!3d45.34909572275814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029714585!5m2!1sen!2sca"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
         </section>
     </main>
     <!-- main ends right before the footer -->
 
     <!-- footer in body starts below -->
-    <footer class="footer">
+    <footer class="footer wrapper">
         <div> &copy; Copyright Three Star Media, 2020</div>
         <div>
             All images are taken from <a href="google.com">Unsplash</a>

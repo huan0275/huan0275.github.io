@@ -1,0 +1,562 @@
+@media screen and (min-width:760) {}
+
+/* mobile version first */
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* how many : doesn't matter */
+
+img {
+    width: 100%;
+}
+.wrapper{
+    max-width: 1200;
+    margin:0 auto;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav-container {
+    background-color: black;
+}
+
+nav ul li:first-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+ 
+
+nav ul li {
+
+    margin: 0 auto;
+    line-height: 3em;
+    text-decoration: none;
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul li:nth-child(2) {
+
+    color: black;
+    width: 100%;
+}
+
+.current a:visited {
+    color: black;
+    background-color: #c78c06;
+
+}
+
+.image1 {
+    text-align: left !important;
+    background-color: #c78c06;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: #c78c06;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: #c78c06;
+    padding-inline: 20%;
+}
+
+/* padding inline-there's a color bar when hovering */
+
+
+nav ul li form input {
+    width: 390px;
+    height: 23px;
+    margin: 0 auto;
+}
+
+nav ul li button {
+    padding: 5px 5px;
+    border: #c78c06 solid 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* nav bar ends here, but can't remove the space between the btn and search bar with margin somehow */
+
+/* banner starts below */
+
+.banner {
+    background-image: url(/final-project/images/main-banner.jpg);
+
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+}
+
+.banner p {
+    color: white;
+    font-size: 10px;
+    padding: 1rem 1.5rem;
+    line-height: 2em;
+}
+
+.banner-2 button {
+    padding: 1.5rem 1.5rem;
+    color: black;
+    background-color: #c78c06;
+    border: none;
+    font-size: 1rem;
+    margin-top: .5;
+    margin-bottom: .5rem;
+    margin-left: 1.5rem;
+}
+
+.banner-2 {
+    
+    position: relative;
+    bottom: 0;
+    top: 3rem;
+    margin: 0 auto;
+}
+
+/* below starts the about-us */
+
+#aboutus {
+    background-color: #ffe6ac;
+}
+
+.about-info img {
+    display: flex;
+    width: 480px;
+    height: auto;
+    padding: .5em;
+}
+
+.about-us h2 {
+    font-weight: 600;
+    font-size: 38px;
+    margin: .5em .5em;
+
+}
+
+.about-us p {
+    margin: .5em .5em;
+    font-size: x-small;
+    padding-bottom: 1em;
+}
+
+/* banner ends here */
+
+/* five cards start below */
+.serv {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.serv h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.ourtm {
+    max-width: 1200px;
+    margin:0 auto;
+    width: 100%;
+}
+
+.ctus table{
+    max-width: 1200px;
+    margin:0 auto;
+    width:100%
+    
+}
+.ctus table th {
+    padding:1em 1em;
+}
+.ctus table tbody tr td {
+    padding:.5em .5em;
+}
+ 
+.card {
+    background-color: #ffe6ac;
+    width: 100%;
+}
+
+.card img{
+     
+    display:block;
+}
+.card h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+}
+
+.card p {
+    margin: .5em .5em;
+    font-size:1rem;
+    line-height: 2em;
+}
+.card button {
+    padding: 1.5rem 1.5rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: medium;
+    margin-top: .5em;
+    margin-bottom: 1rem;
+    margin-left: .5em;
+}
+/* five cards end here with two classes*/
+
+/* vision starts below */
+.vision {
+    background-image: url(/final-project/images/vision.jpg);
+    margin-top: 1em;
+    background-size: cover;
+    height: 260px;
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+}
+
+.vision h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    padding-top: 1.5em;
+    margin: 1em .5em;
+}
+
+.vision p {
+
+    font-size: x-small;
+    line-height: 2em;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.vision button {
+    background-color: #222;
+    padding: 2em 2em;
+    color: white;
+    font-size: 16px;
+    border: #c78c06 solid 1px;
+    margin-left: 1em;
+    margin-top: .5em;
+
+}
+
+/* vision ends here */
+/* team starts below */
+#team h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+ 
+
+.jd {
+    background-color: #ffe6ac;
+}
+
+.jd h3 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: .5em .5em;
+}
+
+.jd h4 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: .5em 1em;
+    border-bottom: 1px #c78c06 solid;
+}
+
+.jd p {
+    font-size: x-small;
+    margin: .5em .5em;
+    padding: 1em .5em;
+    line-height: 1.5em;
+}
+
+/* bob rite */
+
+.br {
+    background-color: #ffe6ac;
+}
+
+.br h3 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: .5em .5em;
+}
+
+.br h4 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: .5em 1em;
+    border-bottom: 1px #c78c06 solid;
+}
+
+.br p {
+    font-size: x-small;
+    margin: .5em .5em;
+    padding: 1em .5em;
+    line-height: 1.5em;
+}
+
+/* team ends here */
+/* contact starts below */
+#contact h2 {
+    font-size: xx-large;
+    font-weight: 700;
+    margin: 1rem 1rem;
+}
+
+#contact h3 {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 1rem 1rem;
+}
+
+.sendusmsg form label {
+    font-size: x-small;
+    font-weight: 200;
+    margin-left: 1rem;
+
+}
+
+.sendusmsg form textarea {
+    width: 450px;
+    height: 150px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: .3em;
+}
+
+.sendusmsg form input {
+    width: 450px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: .3em;
+}
+
+.sendusmsg button {
+    background-color: black;
+    color: #c78c06;
+    padding: .3em .3em;
+    margin: .2em 1em;
+}
+
+/* form ends here */
+/* table styling */
+.table table,
+th,
+td {
+    border: 1px black solid;
+    margin: 1em .5em;
+}
+
+caption {
+    font-size: large;
+    font-weight: 700;
+    margin: 1em 1em;
+    text-align: left;
+}
+
+thead tr th {
+    background-color: #ffe6ac;
+    font-size: small;
+    font-weight: 400;
+     
+     
+}
+
+
+tbody tr  {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1em 1em;
+     
+}
+
+
+
+/* body ends here */
+/* footer starts below */
+
+footer {
+    background-color: #222;
+    margin-top: 1em;
+    padding: 1em 1em;
+    color: #c78c06;
+    line-height: 2em;
+    font-size: small;
+    font-weight: 200;
+}
+
+footer a:visited,
+footer a:link,
+footer a:hover {
+
+    color: #c78c06;
+}
+
+/* mobile mockup ends here */
+/* desktop mockup starts below */
+@media screen and (min-width:760px) {
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
+        flex: 1;
+
+    }
+
+    .image1 {
+        background-color: none;
+        size: auto;
+        margin: 0 auto;
+
+    }
+
+    nav ul li form input {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    nav ul li:first-child {
+        display: flex;
+
+        height: 0;
+    }
+
+    .banner .banner-2 {
+        background: rgba(0, 0, 0, 0.6);
+        max-width: 1200px;
+        margin:0 auto;
+        /* bottom: 0; */
+        /* top: 3rem;
+        left: 4rem; */
+    }
+
+    #aboutus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .serv  {
+        display: grid;
+        grid-template-columns:repeat(6, 1fr) ;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "header header header header header header"
+        "digi digi digi market market market"
+        "vid vid web web print print";
+        gap:1em;
+    }
+    .serv .h2{
+        grid-area: header;
+    }
+    .serv .digital{
+        grid-area: digi;
+    }
+    .serv .marketing{
+        grid-area: market;
+    }
+    .serv .video{
+        grid-area: vid;
+    }
+    .serv .web{
+        grid-area: web;
+    }
+    .serv .print{
+        grid-area: print;
+    }
+    
+    #team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "h2 h2"
+        "jdp jd"
+        "br brp";      
+    
+    }
+    .ourtm h2{
+        grid-area: h2;
+
+    }
+    .ourtm .jdp{
+        grid-area: jdp;
+    }
+    .ourtm .jd{
+        grid-area:jd;
+    }
+     .ourtm .brp{
+        grid-area: brp;
+    }
+    .ourtm .br{
+        grid-area: br;
+    }
+
+    .ctus {
+        display:flex;
+        flex-wrap:wrap;
+        
+    }
+    .ctus h2{
+        flex-basis: 100%;
+    }
+    .ctus .sendusmsg{
+        flex-basis:50%;
+    }
+     .ctus .table {
+         flex-basis:100%;
+         order: 1;
+         width: 100%;
+    }
+    .ctus .map{
+        flex-basis: 50%;
+        
+    }
+
+    }
+  
