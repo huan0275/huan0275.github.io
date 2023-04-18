@@ -31,7 +31,7 @@
                     <!-- current highlight what does that mean?-->
 
 
-                    <li>
+                    <li class="active">
                         <a href="index.html" class="current">Home</a>
                     </li>
 
@@ -58,12 +58,13 @@
                     <!-- search bar with form tag and mag glass -->
                     <li class="searchbar">
                         <form action="search.html" target="_blank">
-                            <label for="contents">search</label>
+                            <label for="contents"></label>
                             <input type="text" id="contents" placeholder="Search" class="input">
                             <!-- submit button, which can't be put inside a tag or the other way around-->
-                            <button class="btn1" onclick="search.html">
+                            <button type="button" class="btn1">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
+
                         </form>
                     </li>
                 </ul>
@@ -88,16 +89,13 @@
                     doloremque porro magnam?
                 </p>
 
-                <a href="contact.html">
-                    <button>
 
-                        Connect with us <i class="fa-sharp fa-solid fa-play"></i>
-
-
-                    </button>
-                </a>
+                <button type="button">
+                    Connect with us <i class="fa-sharp fa-solid fa-play"></i>
+                </button>
 
             </div>
+
         </div>
         <!-- max width same with nav ul, on the this div; rgba control the opacity -->
 
@@ -154,7 +152,8 @@
                     asperiores quasi voluptas error magni!
                 </p>
 
-                <button>Digital Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+                <button type="button">Digital Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
 
             <div class="card marketing">
@@ -169,7 +168,9 @@
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button>Marketing Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
+                <button type="button">Marketing Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
 
             <div class="card video">
@@ -185,7 +186,9 @@
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button>Video Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
+                <button type="button">Video Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
 
             <div class="card web">
@@ -201,7 +204,9 @@
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button>Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
+                <button type="button">Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
 
             <div class="card print">
@@ -217,7 +222,9 @@
                     est quae molestiae consequuntur, eveniet provident odio quam minima consectetur voluptates
                     asperiores quasi voluptas error magni!
                 </p>
-                <button>Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
+                <button type="button">Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
 
         </section>
@@ -230,12 +237,14 @@
                     dolor labore odit ad, molestias maiores, sint incidunt. Harum eveniet corrupti officiis sapiente id!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <button>Learn More <i class="fa-sharp fa-solid fa-play"></i></button>
+
+                <button type="button">Learn More <i class="fa-sharp fa-solid fa-play"></i></button>
+
             </div>
             <!-- still margin zero auto 100% -->
         </section>
 
-        <section id="team" class="wrapper ourtm">
+        <section id="team" class="wrapper ourteam">
 
             <h2>Our Team</h2>
 
@@ -245,9 +254,9 @@
             <!-- internal max w 1200 -->
 
             <!-- image no need to be in the div, but info needs-->
-            <img src="/final-project/images/john.jpg" alt="john" class="jdp">
+            <img src="/final-project/images/john.jpg" alt="john" class="john-pic">
 
-            <div class="jd">
+            <div class="john">
                 <h3>John Doe</h3>
                 <h4>CEO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ab reprehenderit facilis adipisci
@@ -255,9 +264,9 @@
                     repudiandae velit rerum!</p>
             </div>
 
-            <img src="/final-project/images/bob.jpg" alt="john" class="brp">
+            <img src="/final-project/images/bob.jpg" alt="john" class="rite-pic">
 
-            <div class="br">
+            <div class="rite">
 
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
@@ -268,7 +277,7 @@
             <!-- flex base 50%, order of 1 -->
         </section>
 
-        <section id="contact" class="wrapper ctus">
+        <section id="contact" class="wrapper contactus">
 
             <!-- with the width 100% -css max width and margin zero auto -->
             <h2>Contact Us</h2>
@@ -309,9 +318,11 @@
 
                 </form>
 
-                <button>
+
+                <button type="button">
                     Send
                 </button>
+
 
             </div>
 
@@ -359,7 +370,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7700198109583!2d-75.75982286646911!3d45.34909572275814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029714585!5m2!1sen!2sca"
                     width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="googlemap"></iframe>
 
             </div>
         </section>
